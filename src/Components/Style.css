@@ -1,0 +1,980 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+.Header{
+    width: 100%;
+    height: 40px;
+    background: #434344;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+}
+.SubHeader{
+    width: 75%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: lightgray;
+    font-size: 13px;
+  
+}
+
+.SubHeader nav{
+    cursor: pointer;
+}
+.Conlogo{
+    width: 8%;
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+}
+.menu{
+    display: none;
+}
+.AppleLogo{
+    cursor: pointer;
+}
+.NavHold{
+    display: none;
+}
+.FirstHero{
+    width: 100%;
+    height: 40rem;
+    display: flex;
+    background: #FAFAFA;
+    justify-content: space-around;
+    align-items: center;
+}
+.FirstSub{
+    width: 80%;
+    height: 90%;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.TopHeader{
+    width: 40%;
+    height: 22%;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 7%;
+}
+.TopHeader h1{
+    font-size: 50px;
+}
+.TopHeader p{
+    font-size: 25px;
+}
+.link{
+    width: 70%;
+    height: 22%;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+.link span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    gap: 6px;
+    color: #0066CC;
+    cursor: pointer;
+    transform: scale(1);
+}
+.link span:hover{
+    transform: scale(1);
+    text-decoration: underline;
+}
+.MacImg{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.MacImg img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.num2{
+    display: none;
+}
+.otherHero{
+    width: 100%;
+    height: 40rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FAFAFA;
+}
+.otherSub{
+    width: 90%;
+    height: 90%;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.otherHeader{
+    width: 40%;
+    height: 22%;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 7%;
+}
+.otherHeader h1{
+    font-size: 50px;
+}
+.otherHeader p{
+    font-size: 25px;
+}
+.iMacImg{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.iMacImg img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.IphoneContainer{
+    width: 100%;
+    height: 90vh;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.IphoneContainer h1{
+    color: white;
+}
+.IphoneContainer p{
+    color: white;
+}
+.Container{
+    width: 100%;
+    height: max-content;
+    background: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.Card{
+    width: 48.3%;
+    height: 43rem;
+    background: #FAFAFA;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.CardCon{
+    width: 70%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3%;
+}
+.CardCon h1{
+    font-size: 35px;
+}
+.CardCon p{
+    font-size: 19px;
+    font-weight: 600;
+    text-align: center;
+}
+.CardImg{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.CardImg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.MovieCon{
+    width: 100%;
+    height: 48rem;
+    background: #FAFAFA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+.MovieCard{
+    width: 70%;
+    height: 80%;
+    /* border: 2px solid white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    margin: 10px;
+}
+.MovieCard img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.Wrap{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: purple; */
+    position: relative;
+}
+.MoviePrev{
+    width: 18%;
+    height: 80%;
+    /* background: pink; */
+}
+.MovieNxt{
+    width: 18%;
+    height: 80%;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.AllBtn{
+    width: 100%;
+    height: 12%;
+    /* background: pink; */
+    position: absolute;
+    top: 86%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.HoldSpan {
+    width: 20%;
+    height: 50%;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.HoldSpan span{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: gray;
+    cursor: pointer;
+    transform: scale(1);
+}
+.HoldSpan span:hover{
+    transform: scale(1);
+    transition: all 350ms ease-in-out;
+    background: #434344;
+}
+.mobile{
+    display: none;
+}
+.info{
+    width: 70%;
+    height: 20%;
+    position: absolute;
+    top: 80%;
+    left: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 10%; */
+}
+.holdinfo{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      gap: 5%;
+}
+.holdinfo p{
+    color: white;
+}
+.holdinfo h3{
+    color: white;
+}
+.info button{
+    padding: 13px 20px;
+    font-size: 15px;
+    border-radius: 17px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transform: scale(1);
+}
+.info button:hover{
+    transition: all 350ms ease-in-out;
+    background: lightgray;
+}
+.footer{
+    width: 100%;
+    height: 52rem;
+    background: #FAFAFA;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.firstfooter{
+    width: 70%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.firstfooter p{
+    color: gray;
+    font-size: 15px;
+}
+.SecondFooter{
+    width: 70%;
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    border-top: 1px solid grey;
+    padding-top: 15px;
+}
+.thirdfooter{
+    width: 70%;
+    height: 6%;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid #434344;
+    align-items: center;
+    color: #434344;
+}
+.ico{
+    display: none;
+}
+.div{
+    width: 15%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    align-items: center;
+   
+}
+.div span{
+    color: gray;
+    font-weight: 500;
+}
+@media screen and (max-width:850px) {
+
+    .SubHeader nav{
+        display: none;
+    }
+    .SubHeader{
+        justify-content: space-between;
+        /* background: red; */
+        width: 90%;
+    }
+    .Conlogo{
+        /* background: #000; */
+        width: 24%;
+        height: 70%;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 18px;
+    }
+    .menu{
+        display: block;
+    }
+    .AppleLogo{
+        font-size: 18px;
+      
+    }
+    /* .num2{
+        display: block;
+    } */
+   
+    .FirstSub{
+        /* background: red; */
+        width: 100%;
+        justify-content: flex-start;
+        padding-top: 20px;
+    }
+    .TopHeader{
+        width: 100%;
+        /* background: green; */
+        height: 20%;
+    }
+    .TopHeader h1{
+        font-size: 35px;
+    }
+    .TopHeader p{
+        font-size: 20px;
+    }
+    .link{
+        width: 100%;
+        justify-content: center;
+        gap: 2%;
+    }
+    .MacImg{
+        height: 60%;
+    }
+    .MacImg img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .otherSub{
+        width: 100%;
+        justify-content: flex-start;
+        padding-top: 20px;
+    }
+    .otherHeader{
+        width: 100%;
+        /* background: green; */
+        height: 20%;
+    }
+    .otherHeader h1{
+        font-size: 35px;
+    }
+    .otherHeader p{
+        font-size: 20px;
+    }
+    .Container{
+        display: flex;
+    }
+    .MovieCard{
+        width: 90%;
+    }
+    .MovieNxt{
+        width: 5%;
+    }
+    .MoviePrev{
+        width: 5%;
+    }
+    .MovieCard img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .HoldSpan{
+        width: 40%;
+    }
+    .firstfooter{
+        width: 90%;
+    }
+    .SecondFooter{
+        width: 90%;
+    }
+    .thirdfooter{
+        width: 90%;
+        font-size: 12px;
+    }
+    .div{
+        width: 100%;
+        border-bottom: 1px solid grey;
+        height: 9%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #434344;
+        flex-direction: row;
+    }
+    .ico{
+        display: block;
+    }
+    .div span{
+        display: none;
+    }
+    
+}
+
+
+@media screen and (max-width:600px) {
+
+    .SubHeader nav{
+        display: none;
+    }
+    .SubHeader{
+        justify-content: space-between;
+    }
+    .Conlogo{
+     
+        width: 40%;
+        height: 70%;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 18px;
+    }
+    .menu{
+        display: block;
+    }
+    .AppleLogo{
+        font-size: 18px;
+      
+    }
+    .num2{
+        display: block;
+    }
+    .num1{
+        display: none;
+    }
+    .FirstSub{
+        /* background: red; */
+        width: 100%;
+        justify-content: flex-start;
+        padding-top: 20px;
+    }
+    .TopHeader{
+        width: 100%;
+        /* background: green; */
+        height: 20%;
+    }
+    .TopHeader h1{
+        font-size: 35px;
+    }
+    .TopHeader p{
+        font-size: 20px;
+    }
+    .link{
+        width: 100%;
+        justify-content: center;
+        gap: 2%;
+    }
+    .MacImg img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .otherSub{
+        width: 100%;
+        justify-content: flex-start;
+        padding-top: 20px;
+    }
+    .otherHeader{
+        width: 100%;
+        /* background: green; */
+        height: 20%;
+    }
+    .otherHeader h1{
+        font-size: 35px;
+    }
+    .otherHeader p{
+        font-size: 20px;
+    }
+    .Container{
+        flex-direction: column;
+    }
+    .Card{
+        width: 95%;
+    }
+    .MovieCard{
+        width: 90%;
+    }
+    .MovieNxt{
+        width: 10%;
+    }
+    .MoviePrev{
+        width: 10%;
+    }
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
+    .info{
+        width: 100%;
+    }
+    .info button{
+        padding: 5px 5px;
+        font-size: 13px;
+    }
+    .holdinfo{
+        width: 60%;
+        height: 40%;
+    }
+    .holdinfo p{
+        font-size: 10px;
+    }
+    .footer{
+        height:80rem;
+       
+     }
+     .firstfooter{
+         width: 90%;
+        height: 60%;
+     }
+     .firstfooter p{
+         font-size: 13px;
+         
+     }
+     .SecondFooter{
+         width: 90%;
+     }
+     .thirdfooter{
+        width: 90%;
+        font-size: 12px;
+     }
+     .div{
+        width: 100%;
+        border-bottom: 1px solid grey;
+        height: 9%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #434344;
+        flex-direction: row;
+    }
+    .ico{
+        display: block;
+    }
+    
+}
+
+
+@media screen and (max-width:375px) {
+ 
+    .SubHeader nav{
+        display: none;
+    }
+    .SubHeader{
+        justify-content: space-between;
+    }
+    .Conlogo{
+        width: 40%;
+        height: 70%;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 18px;
+    }
+    .menu{
+        display: block;
+    }
+    .AppleLogo{
+        font-size: 18px;
+     
+    }
+    .num2{
+        display: block;
+    }
+    .num1{
+        display: none;
+    }
+    .FirstSub{
+        /* background: red; */
+        width: 100%;
+        justify-content: flex-start;
+        padding-top: 20px;
+    }
+    .TopHeader{
+        width: 100%;
+        /* background: green; */
+        height: 20%;
+    }
+    .TopHeader h1{
+        font-size: 35px;
+    }
+    .TopHeader p{
+        font-size: 20px;
+    }
+    .link{
+        width: 100%;
+        justify-content: center;
+        gap: 2%;
+    }
+    .MacImg img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .iMacImg img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .otherSub{
+        width: 100%;
+        justify-content: flex-start;
+        padding-top: 20px;
+    }
+    .otherHeader{
+        width: 100%;
+        /* background: green; */
+        height: 20%;
+    }
+    .otherHeader h1{
+        font-size: 35px;
+    }
+    .otherHeader p{
+        font-size: 20px;
+    }
+    .Container{
+        flex-direction: column;
+    }
+    .Card{
+        width: 95%;
+    }
+    .MovieCard{
+        width: 90%;
+    }
+    .MovieNxt{
+        width: 10%;
+    }
+    .MoviePrev{
+        width: 10%;
+    }
+    .CardCon{
+        width: 100%;
+    }
+    .HoldSpan{
+        width: 90%;
+    }
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
+    .info{
+        width: 100%;
+    }
+    .info button{
+        padding: 5px 5px;
+        font-size: 13px;
+    }
+    .holdinfo{
+        width: 60%;
+        height: 40%;
+    }
+    .holdinfo p{
+        font-size: 10px;
+    }
+    .footer{
+        height:80rem;
+       
+     }
+     .firstfooter{
+         width: 90%;
+        height: 60%;
+     }
+     .firstfooter p{
+         font-size: 13px;
+         
+     }
+     .SecondFooter{
+         width: 90%;
+     }
+     .thirdfooter{
+        width: 90%;
+        font-size: 12px;
+     }
+     .div{
+        width: 100%;
+        border-bottom: 1px solid grey;
+        height: 9%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #434344;
+        flex-direction: row;
+    }
+    .ico{
+        display: block;
+    }
+    
+    
+}
+
+@media screen and (max-width:320px) {
+   
+    .SubHeader nav{
+        display: none;
+    }
+    .SubHeader{
+        justify-content: space-between;
+    }
+    .Conlogo{
+        width: 40%;
+        height: 70%;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 18px;
+    }
+    .AppleLogo{
+        font-size: 18px;
+    }
+    .num2{
+        display: block;
+    }
+    .num1{
+        display: none;
+    }
+    .FirstSub{
+        /* background: red; */
+        width: 100%;
+        justify-content: flex-start;
+        padding-top: 20px;
+    }
+    .TopHeader{
+        width: 100%;
+        /* background: green; */
+        height: 20%;
+    }
+    .TopHeader h1{
+        font-size: 35px;
+    }
+    .TopHeader p{
+        font-size: 20px;
+    }
+    .link{
+        width: 100%;
+        justify-content: center;
+        gap: 2%;
+    }
+    .MacImg img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .iMacImg img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .NavHold{
+        display: block;
+        background: #434344;
+        position: absolute;
+        height: 25rem;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        flex-direction: column;
+        top: 32px;
+        color: #FAFAFA;
+        padding-inline: 10px;
+    }
+    .NavHold nav{
+        cursor: pointer;
+    }
+    .menu{
+        transform: scale(1);
+    }
+    .menu:hover{
+        transform: scale(1.1);
+        transition: all 350ms ease-in-out;
+    }
+    .otherSub{
+        width: 100%;
+        justify-content: flex-start;
+        padding-top: 20px;
+    }
+    .otherHeader{
+        width: 100%;
+        /* background: green; */
+        height: 20%;
+    }
+    .otherHeader h1{
+        font-size: 35px;
+    }
+    .otherHeader p{
+        font-size: 20px;
+    }
+    .Container{
+        flex-direction: column;
+    }
+    .Card{
+        width: 90%;
+    }
+    .CardCon{
+        width: 100%;
+    }
+    .MovieCard{
+        width: 90%;
+    }
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
+    .MovieNxt{
+        width: 5%;
+    }
+    .MoviePrev{
+        width: 5%;
+    }
+    .info{
+        width: 100%;
+    }
+    .info button{
+        padding: 5px 5px;
+        font-size: 13px;
+    }
+    .holdinfo{
+        width: 60%;
+        height: 40%;
+    }
+    .holdinfo p{
+        font-size: 10px;
+    }
+    .footer{
+       height:80rem;
+      
+    }
+    .firstfooter{
+        width: 90%;
+       height: 60%;
+    }
+    .firstfooter p{
+        font-size: 13px;
+        
+    }
+    .SecondFooter{
+        width: 90%;
+    }
+    .thirdfooter{
+        width: 90%;
+        font-size: 10px;
+    }
+    .div{
+      flex-direction: row;
+    }
+    .ico{
+        display: block;
+    }
+    
+    
+}
